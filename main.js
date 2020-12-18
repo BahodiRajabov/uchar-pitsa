@@ -3,6 +3,7 @@ let elBreadSelect = document.querySelector(".order__choose-bread-select");
 let elSizeList = document.querySelector(".order__choose-size-list");
 let elMixList = document.querySelector(".order__choose-mix-list");
 let elDetailsList = document.querySelector(".order__choose-details-list");
+let elOrderForm = document.querySelector(".order__form");
 //NAtijalarni hisoblagandan keyin uni joylash uchun bosh matnlar
 let elBreadSelectResult = document.querySelector(".bread-select-result");
 let elSizeResult = document.querySelector(".size-result");
@@ -152,3 +153,7 @@ for (const detail of detailsList) {
     }
   });
 }
+elOrderForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Sizning buyurtmangiz qabul qilindi😃");
+});
