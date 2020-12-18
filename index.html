@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uchar pitsa</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="order">
+    <div class="container">
+      <h1 class="order__title">Uchar pitsa (qanoti singan pitsa)</h1>
+      <form class="order__form" action="" method="post">
+        <section class="order__choose">
+          <div class="order__choose-field-wrapper">
+            <label class="order__choose-question" for="bread-select">Non qannday bo'lsin do'st?</label>
+            <select class="order__choose-bread-select" name="bread" id="bread-select">
+              <option class="order__choose-bread-select-option" value="" selected disabled>Tanlang</option>
+            </select>
+          </div>
+          <div class="order__choose-field-wrapper">
+            <p class="order__choose-question">Kattaligi qancha bo'lsin?</p>
+            <div class="order__choose-size-list">
+            </div>
+          </div>
+          <div class="order__choose-field-wrapper">
+            <p class="order__choose-question">Ustiga nima solaylik?</p>
+            <div class="order__choose-mix-list"></div>
+          </div>
+          <div class="order__choose-field-wrapper">
+            <p class="order__choose-question">Qo'shimcha nimalar solaylik?</p>
+            <div class="order__choose-details-list"></div>
+          </div>
+        </section>
+        <section class="order__result">
+          <div class="order__result-wrapper">
+            <p class="order__result-wrapper-text">Non:</p>
+            <p class="bread-select-result order__result-wrapper-result ">
+            </p>
+          </div>
+          <div class="order__result-wrapper">
+            <p class="order__result-wrapper-text">Kattaligi:</p>
+            <p class="size-result order__result-wrapper-result ">
+            </p>
+          </div>
+          <div>
+            <p class="order__result-wrapper-text">Ustida:</p>
+            <ul class="mix-result ">
+            </ul>
+          </div>
+          <div>
+            <p class="order__result-wrapper-text">Qoshimcha:</p>
+            <ul class="details-result">
+            </ul>
+          </div>
+          <button class="order__button" type="submit">Yuborish</button>
+        </section>
+      </form>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
